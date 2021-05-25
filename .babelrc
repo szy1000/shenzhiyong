@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "@babel/preset-flow",
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-flow",
+    "babel-plugin-transform-class-properties",
+    "@babel/plugin-transform-runtime",
+  ]
+}

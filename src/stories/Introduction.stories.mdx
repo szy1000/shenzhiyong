@@ -1,0 +1,167 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+import logo from './assets/logo.png';
+
+<Meta title="欢迎来到长江组件库" />
+
+
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+    }
+  }
+
+  .link-item {
+    display: block;
+    padding: 20px 30px 20px 15px;
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .link-item strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .link-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    flex: none;
+  }
+
+  .link-item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+`}</style>
+# 欢迎来到长江组件库
+一个由长江前端团队自己打造的库
+### 安装组件库
+
+```javascript
+
+npm install ahcj-generals --save
+
+```
+### 使用方式
+
+```javascript
+// 加载样式
+import 'ahcj-generals/dist/index.css'
+// 引入组件
+import {Button, Panel} from "ahcj-generals"
+
+```
+<div class="subheading">描述文档</div>
+<div class="link-list">
+  <a class="link-item" href="https://modao.cc/app/c6ff5baaae7d447bef2505ede7e2629daa7ebc1f?simulator_type=device&sticky" target="_blank">
+    <img src={Plugin} alt="plugin" />
+    <span>
+      <strong>前端团队组件规范</strong>
+      保障组件库的完美兼容当前业务需要
+    </span>
+  </a>
+  <a class="link-item" href="http://gitlab.iwhalecloud.com/iip/iip-front-pc-qst-enterprise" target="_blank">
+    <img src={Colors} alt="plugin" />
+    <span>
+      <strong>前端团队编码规范</strong>
+      保障前端团队代码的质量
+    </span>
+  </a>
+  <a class="link-item" href="https://storybook.js.org/docs" target="_blank">
+      <img src={Repo} alt="repo" />
+      <span>
+        <strong>Storybook documentation</strong>
+        Configure, customize, and extend
+      </span>
+    </a>
+    <a class="link-item" href="https://www.learnstorybook.com" target="_blank">
+      <img src={Direction} alt="direction" />
+      <span>
+        <strong>In-depth guides</strong>
+        Best practices from leading teams
+      </span>
+    </a>
+</div>
+
+<div class="tip-wrapper">© 2019 安徽长江工业大数据科技股份公司 版权所有 | All rights reserved</div>
