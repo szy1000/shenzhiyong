@@ -24,6 +24,7 @@ jobs:
         run: |
           node -v
           npm -v
+          npm install
           npm run build
           echo 'hello github actions'
 
