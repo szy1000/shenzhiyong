@@ -15,6 +15,9 @@
   "exclude": [
     "node_modules",
     "./src/components/**/*.stories.tsx",
-    "./src/stories/*"
+    "./src/stories/*",
+    "./tsconfig.build.json",
+    "./tsconfig.json",
+    "node_modules"
   ]
 }
