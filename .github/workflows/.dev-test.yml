@@ -1,0 +1,30 @@
+name: 'shenzhiyong'
+
+#触发条件
+
+on:
+  push:
+    branches:
+      - master
+    paths:              #限制修改的内容
+      - '.github/workflow/**'
+      - '__test__/**'
+      - 'src/**'
+
+jobs:
+  dev:
+    runs-on: ubuntu-lastest
+    steps:
+      - uses: actions/checkout@v2    # git pull 第三方actions
+      - name: Use Node.js
+        uses: actions/setup-node@v1   # 安装 nodejs
+        with:
+            node-version: 14
+      - name: print node version
+        run: |
+          node -v
+          npm -v
+          npm run build
+          echo 'hello github actions'
+
+
