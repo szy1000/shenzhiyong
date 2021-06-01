@@ -117,16 +117,16 @@ import StackAlt from './assets/stackalt.svg';
 
 ```javascript
 
-npm install vikingship --save
+npm install shenzhiyong --save
 
 ```
 #### 使用方式
 
 ```javascript
 // 加载样式
-import 'vikingship/dist/index.css'
+import 'shenzhiyong/dist/index.css'
 // 引入组件
-import { Button } from 'vikingship'
+import { Button } from 'shenzhiyong'
 ```
 
 Browse example stories now by navigating to them in the sidebar.
