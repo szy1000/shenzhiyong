@@ -11,12 +11,11 @@
   "include": [
     "src"
   ],
+  "extends": "./tsconfig.build.json",
   "exclude": [
     "src/**/*.test.tsx",
     "src/components/**/*.test.tsx",
     "src/**/*.stories.tsx",
-    "./tsconfig.build.json",
-    "./tsconfig.json",
     "node_modules"
   ]
 }
